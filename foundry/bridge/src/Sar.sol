@@ -10,7 +10,7 @@ contract Sarf is ERC20, Ownable {
         
     }
 
-    function mint(address _to, uint amount) public isOwner{
+    function mint(address _to, uint amount) public onlyOwner{
         _mint(_to, amount);
     }
 

@@ -10,11 +10,11 @@ contract WSarf is ERC20, Ownable {
         
     }
 
-    function mint(address _to, uint amount) public isOwner{
+    function mint(address _to, uint amount) public onlyOwner{
         _mint(_to, amount);
     }
 
-    function burn(address _to, uint amount) public isOwner {
+    function burn(address _to, uint amount) public onlyOwner {
         _burn(_to, amount);
     }
 
