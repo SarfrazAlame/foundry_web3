@@ -1,0 +1,3 @@
+[submodule "upgradable/staking-contract"]
+	path = upgradable/staking-contract
+	url = https://github.com/SarfrazAlame/foundry_web3.git
